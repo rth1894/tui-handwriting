@@ -9,7 +9,7 @@ A terminal-based user interface (TUI) for handwriting recognition, using `textua
 - **Reset Button**: Resets the canvas image if user wants.
 
 ## Dataset
-We use the **EMNIST Dataset** for training and testing the handwriting recognition model.
+We are using the **EMNIST Dataset** for training and testing the handwriting recognition model.
 More details and download the dataset here:
 [EMNIST Dataset (nist.gov)](https://www.nist.gov/itl/products-and-services/emnist-dataset)
 
