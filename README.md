@@ -14,7 +14,7 @@ More details and download the dataset here:
 [EMNIST Dataset (nist.gov)](https://www.nist.gov/itl/products-and-services/emnist-dataset)
 
 ## Screenshots
-![Preview](images/done-yet.png)
+![Preview](images/done-yet-v2.png)
 
 ## Setup
 ### Requirements
