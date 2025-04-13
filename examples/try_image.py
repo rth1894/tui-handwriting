@@ -7,8 +7,6 @@ def load_images(filename):
         images = np.fromfile(f, dtype=np.uint8).reshape(num, rows, cols)
     return images
 
-images = load_images("../gzip/emnist-balanced-train-images-idx3-ubyte")
-print(f"Loaded {images.shape[0]} images of size {images.shape[1]}x{images.shape[2]}")
 
 def load_labels(filename):
     with open(filename, 'rb') as f:
@@ -16,11 +14,15 @@ def load_labels(filename):
         labels = np.fromfile(f, dtype=np.uint8)
     return labels
 
+
+images = load_images("../gzip/emnist-balanced-train-images-idx3-ubyte")
+print(f"Loaded {images.shape[0]} images of size {images.shape[1]}x{images.shape[2]}")
+
 labels = load_labels("../gzip/emnist-balanced-train-labels-idx1-ubyte")
 print(f"Loaded {len(labels)} labels")
 
 
-plt.imshow(images[0], cmap='gray')
-plt.title(f"Label: {labels[0]}")
+plt.imshow(images[10], cmap='gray')
+plt.title(f"Label: {labels[10]}")
 plt.savefig("sample_image.png")  # Saves the image
 print("Image saved as sample_image.png")

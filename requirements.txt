@@ -2,3 +2,7 @@ textual
 pygame
 matplotlib
 numpy
+tensorflow
+pillow
+scikit-learn
+seaborn
